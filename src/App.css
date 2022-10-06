@@ -5,7 +5,8 @@ body {
 }
 
 :root {
-  --primary-red: rgb(208, 18, 18);
+  --primary-green: rgb(97, 208, 18);
+  --primary-tara: rgb(226,114,91);
 }
 
 /**************************** NavBar *********************************/
@@ -30,11 +31,24 @@ nav ul li {
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  color: var(--primary-red);
+  color: var(--primary-tara);
 }
 
 .navbar-brand {
   max-width: 17.25rem;
   padding: 0;
   height: 6rem;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:active:focus {
+  border-bottom: 0.188rem solid var(--primary-green);
+}
+
+.navbar-nav > li > a:hover {
+  border-bottom: 0.188rem solid var(--primary-green);
+  color: var(--primary-green);
+}
+
+.navbar-nav >  li > a.active {
+  color: var(--primary-green);
 }
