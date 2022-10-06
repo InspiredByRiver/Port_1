@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+/**************************** Top *********************************/
+
+body {
+  font-family: 'Shadows Into Light', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-red: rgb(208, 18, 18);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/**************************** NavBar *********************************/
+
+.logo {
+  width: 6rem;
+  height: 5.4rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/**************************** Menu Link *********************************/
+
+nav a.nav-link {
+  letter-spacing: 0.406rem;
+  cursor: pointer;
+  font-size: 2.125rem;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li {
+  font-family: 'Shadows Into Light', cursive;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-red);
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0;
+  height: 6rem;
 }
