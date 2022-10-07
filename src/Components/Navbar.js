@@ -7,10 +7,10 @@ import { faLeaf } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   return (
-    <div>
+    <div className='temp'>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className='container'>
-  <a className="navbar-brand" href="#"><img className='logo'  src={logo} alt='logo...' ></img></a>
+  <a className="navbar-brand" href="#"><img className='logo' src={logo} alt='logo...' ></img></a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   <FontAwesomeIcon icon={faLeaf} style={{ color: "rgb(97, 208, 18)" }} />
   </button>

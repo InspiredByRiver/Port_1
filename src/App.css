@@ -7,6 +7,8 @@ body {
 :root {
   --primary-green: rgb(97, 208, 18);
   --primary-tara: rgb(226,114,91);
+  --primary-h1: rgb(218, 241, 172);
+  --primary-aliceblue: rgb(240, 248, 255);
 }
 
 /**************************** NavBar *********************************/
@@ -14,6 +16,8 @@ body {
 .logo {
   width: 6rem;
   height: 5.4rem;
+  border-radius: 20px;
+  box-shadow: 3.5px 3.5px 10px var(--primary-h1);
 }
 
 /**************************** Menu Link *********************************/
@@ -32,6 +36,7 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-tara);
+  text-shadow: 2px 2px 10px var(--primary-h1);
 }
 
 .navbar-brand {
@@ -52,3 +57,69 @@ nav ul li {
 .navbar-nav >  li > a.active {
   color: var(--primary-green);
 }
+
+
+
+
+/**************************** Header *********************************/
+
+.header-wraper {
+  position: relative;
+  background: url(rWallpaper.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.main-info h1 {
+  margin: 4rem;
+  margin-bottom: 0%;
+  font-size: 4rem;
+  color: var(--primary-h1);
+}
+
+.main-info h3 {
+  margin: 4rem;
+  color: var(--primary-h1);
+  margin-top: 1rem;
+}
+
+
+/**************************** Typed Text *********************************/
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-aliceblue);
+}
+
+/**************************** HEADER (btn-main-offer) *********************************/
+
+.btn-main-offer {
+  border: 1px solid var(--primary-h1);
+  text-transform: uppercase;
+  border-radius: 500px;
+  border-width: 2px;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-green);
+  margin: 1rem;
+}
+
+.main-info a:hover {
+  color: var(--primary-aliceblue);
+  box-shadow: 3.5px 3.5px 10px var(--primary-aliceblue);
+}
+
